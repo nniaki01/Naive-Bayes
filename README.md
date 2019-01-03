@@ -1,16 +1,16 @@
 # Naive-Bayes
-Two variants of the Naive Bayes algorithm with smoothing as applied to text categorization.
+ Two variants of the Naive Bayes algorithm with smoothing as applied to text categorization.
 
-Why is it "Naive"?
+ Why is it "Naive"?
 
    1. A document d is simply represented as a bag of words, i.e., features.
    
    2. Position of the words doesn't matter; given class, the features are independent.
    
     
-*Goal*: Predcit the class `c` of document `d` given its features.
+ *Goal*: Predcit the class `c` of document `d` given its features.
 
-*How?*: Pick the most likely class, i.e., the __maximum a posteriori probability__ estimate of the document class:
+ *How?* Pick the most likely class, i.e., the __maximum a posteriori probability__ estimate of the document class:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=c_{\textrm{MAP}}=\arg&space;\max_{c\in&space;C}&space;\mathbb{P}[c|d]=\arg&space;\max_{c\in&space;C}&space;\frac{\mathbb{P}[d|c]\mathbb{P}[c]}{\mathbb{P}[d]}=\arg&space;\max_{c\in&space;C}&space;\mathbb{P}[d|c]\mathbb{P}[c]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c_{\textrm{MAP}}=\arg&space;\max_{c\in&space;C}&space;\mathbb{P}[c|d]=\arg&space;\max_{c\in&space;C}&space;\frac{\mathbb{P}[d|c]\mathbb{P}[c]}{\mathbb{P}[d]}=\arg&space;\max_{c\in&space;C}&space;\mathbb{P}[d|c]\mathbb{P}[c]" title="c_{\textrm{MAP}}=\arg \max_{c\in C} \mathbb{P}[c|d]=\arg \max_{c\in C} \frac{\mathbb{P}[d|c]\mathbb{P}[c]}{\mathbb{P}[d]}=\arg \max_{c\in C} \mathbb{P}[d|c]\mathbb{P}[c]" /></a>
 
