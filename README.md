@@ -30,7 +30,7 @@ In this project two variants of Naive Bayes are implemented:
   
    In this case, a document `d` has as many features as the number of words in it and a "token feature" has as many possible values as words in the vocabulary (all words in training files).
    
-<a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{\mathbb{P}}[w_i|c]=\frac{\textrm{count}(w_i,c)}{\sum_{\textrm{All&space;words&space;}w}\textrm{count}(w,c)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{\mathbb{P}}[w_i|c]=\frac{\textrm{count}(w_i,c)}{\sum_{\textrm{All&space;words&space;}w}\textrm{count}(w,c)}" title="\widehat{\mathbb{P}}[w_i|c]=\frac{\textrm{count}(w_i,c)}{\sum_{\textrm{All words }w}\textrm{count}(w,c)}," /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{\mathbb{P}}[w_i|c]=\frac{\textrm{count}(w_i,c)}{\underbrace{\sum_{\textrm{All&space;words&space;}w}\textrm{count}(w,c)}_{\textrm{count}(c)}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{\mathbb{P}}[w_i|c]=\frac{\textrm{count}(w_i,c)}{\underbrace{\sum_{\textrm{All&space;words&space;}w}\textrm{count}(w,c)}_{\textrm{count}(c)}}" title="\widehat{\mathbb{P}}[w_i|c]=\frac{\textrm{count}(w_i,c)}{\underbrace{\sum_{\textrm{All words }w}\textrm{count}(w,c)}_{\textrm{count}(c)}}" /></a>
   
   which is the fraction of word <a href="https://www.codecogs.com/eqnedit.php?latex=w_i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?w_i" title="w_i" /></a> appearing among all words of all the documents of class `c`.
   
