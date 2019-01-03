@@ -59,3 +59,8 @@ where `V=2` corresponding to binary features in this case.
  2. For every class `c`, compute <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{\mathbb{P}}[c]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{\mathbb{P}}[c]" title="\widehat{\mathbb{P}}[c]" /></a>.
  
  3. Compute <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{\mathbb{P}}[w_i|c]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{\mathbb{P}}[w_i|c]" title="\widehat{\mathbb{P}}[w_i|c]" /></a> according to either Type I or Type II.
+
+## Remark
+
+ * Naive Bayes is fast ( just count words) and has low storage requirements. 
+ * It's robust to irrelevant features since they cancel each other. If a feature `w` is irrelevant, <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{\mathbb{P}}[w|c]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{\mathbb{P}}[w|c]" title="\widehat{\mathbb{P}}[w|c]" /></a> becomes almost unifrom.
