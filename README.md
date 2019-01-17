@@ -1,4 +1,7 @@
 # Naive-Bayes
+
+Naive-Bayes is a **Probabilistic Generative Model**.
+ 
  Two variants of the Naive Bayes algorithm with smoothing as applied to text categorization.
 
  Why is it "Naive"?
