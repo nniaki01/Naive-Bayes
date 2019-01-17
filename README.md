@@ -1,6 +1,8 @@
 # Naive-Bayes
 
 Naive-Bayes classifier is a **Probabilistic Generative Model**.
+
+Naive-Bayes classifier is a **Supervised** machine learning algorithm.
  
  Two variants of the Naive Bayes algorithm with smoothing as applied to text categorization.
 
