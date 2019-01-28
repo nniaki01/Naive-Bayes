@@ -53,7 +53,7 @@ In this project two variants of Naive Bayes are implemented:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{\mathbb{P}}[w_i|c]=\frac{\textrm{\&hash;&space;documents&space;of&space;class&space;}&space;c&space;\textrm{&space;containing&space;}&space;w_i&plus;m}{\textrm{\&hash;&space;documents&space;of&space;class&space;}&space;c&space;&plus;mV}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{\mathbb{P}}[w_i|c]=\frac{\textrm{\&hash;&space;documents&space;of&space;class&space;}&space;c&space;\textrm{&space;containing&space;}&space;w_i&plus;m}{\textrm{\&hash;&space;documents&space;of&space;class&space;}&space;c&space;&plus;mV}" title="\widehat{\mathbb{P}}[w_i|c]=\frac{\textrm{\# documents of class } c \textrm{ containing } w_i+m}{\textrm{\# documents of class } c +mV}" /></a>
 
-where `V=2` corresponding to binary features in this case.
+where `V=2` corresponding to binary features in this case. The formula above, accounts for smoothing.
 
 ## Procedure
 
