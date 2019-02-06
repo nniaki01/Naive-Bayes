@@ -69,3 +69,5 @@ where `V=2` corresponding to binary features in this case. The formula above, ac
 
  * Naive Bayes is fast ( just count words) and has low storage requirements. 
  * It's robust to irrelevant features since they cancel each other. If a feature `w` is irrelevant, <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{\mathbb{P}}[w|c]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{\mathbb{P}}[w|c]" title="\widehat{\mathbb{P}}[w|c]" /></a> becomes almost unifrom.
+---
+The script 'learning_curves' generates 4 learning curves for ibmmac dataset for each variant of Baive-Bayes (Type1 and Type2) without smoothing (m=0) and with Laplace Smoothing (m=1). This produces 4 plots of accuracy on the test set versus 10 different training set sizes 0.1N, 0.2N, ..., 0.9N, and N.
