@@ -8,7 +8,7 @@ Naive-Bayes classifier is a **Supervised** machine learning algorithm.
 
  Why is it "Naive"?
 
-   1. A document d is simply represented as a bag of words, i.e., features.
+   1. A document `d` is simply represented as a bag of words, i.e., features.
    
    2. Position of the words doesn't matter; given class, the features are independent.
    
