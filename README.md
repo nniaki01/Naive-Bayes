@@ -73,7 +73,8 @@ where `V=2` corresponding to binary features in this case. The formula above, ac
 ---
 ---
 
-We will be using a subset of the [20 newsgroups data set](http://qwone.com/~jason/20Newsgroups/) that has already been pre-processed (we convert to lowercase in addition and only consider word tokens that are alphbaet-only, i.e., `token.isalpha() = True`). The data files are in the `imbmac` directory. More specically, each dataset for this project includes text documents containing articles from two different categories. The task is to identify the category of each document. The dataset includes articles that were posted on newsgroups **comp.sys.mac.hardware** and **comp.sys.ibm.pc.hardware**. Each document is a message posted to one of the groups. Our class labels Yes and No capture membership in these groups (Yes corresponds to ibm).
+We will be using a subset of the [20 newsgroups data set](http://qwone.com/~jason/20Newsgroups/) -- roughly 1200 examples -- that has been already "cleaned" (non-alphabet characters removed). The data files are in the `imbmac` directory. More specically, each dataset for this project includes separate text documents containing articles from two different categories. The task is to identify the category of each document. The dataset includes articles that were posted on newsgroups **comp.sys.mac.hardware** and **comp.sys.ibm.pc.hardware**. Each document is a message posted to one of the groups. Our class labels Yes and No capture membership in these groups (Yes corresponds to ibm). The class label of each example is indicated in a separate “index” file. The data is already split into a training portion and a test portion, and each is given in a separate index file (index_train and index_test, respectively).
+
 
 Goal: Learn a classifier that, when given a new article, assigns it to the correct group.
 
