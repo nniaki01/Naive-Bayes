@@ -31,7 +31,7 @@ The model has <a href="https://www.codecogs.com/eqnedit.php?latex=O(\&hash;\text
 
 In this project two variants of Naive Bayes are implemented: 
 
-  __Type1__ 
+  __Type1 (Multinomial Naive Bayes)__ 
   
    In this case, a document `d` has as many features as the number of words in it and a "token feature" has as many possible values as words in the vocabulary (all words in training files).
    
@@ -47,7 +47,7 @@ In this project two variants of Naive Bayes are implemented:
   
   where `V` is the vocabulary size, i.e., number of all words in the training documents.
   
-  __Type2__ 
+  __Type2 (Bernoulli Naive Bayes)__ 
   
    In this case, the number of features of for any document is the number of words in the vocabulary. Each feature is binary, having value 1 when the corresponding word appears in the document and value 0 otherwise (there's an implicit word order determined by the way the vocabulary has been stored).
 
